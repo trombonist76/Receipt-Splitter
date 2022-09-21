@@ -1,6 +1,6 @@
 <script setup>
   import Product from './Product/Product.vue';
-  import Button from '@/Components/Receipt/Shared/Button.vue';
+  import Button from '@/components/Receipt/Shared/Button.vue';
   
   import { inject } from 'vue';
   const {products, addProduct, deleteProduct} = inject("products")
