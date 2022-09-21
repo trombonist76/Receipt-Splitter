@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body,#app{
+  background-color: #0B1734;
+  font-family: 'Sora', sans-serif;
+  color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+@layer components {
+  .btn {
+    @apply bg-indigo-600 rounded-sm text-sm py-2 px-2 transition-colors;
+  }
+
+  .btn:hover {
+    @apply bg-indigo-400;
+  }
+
+  .delete-btn {
+    @apply bg-red-500 rounded-sm text-sm py-2 px-2 transition-colors;
+  }
+
+  .delete-btn:hover {
+    @apply bg-red-400 rounded-sm text-sm py-2 px-2 transition-colors;
+  }
+
+  .add-btn {
+    @apply bg-emerald-500 rounded-sm text-sm py-2 px-2 transition-colors;
+  }
+
+  .add-btn:hover {
+    @apply bg-emerald-400 rounded-sm text-sm py-2 px-2 transition-colors;
+  }
+
+
+
+  .btn:disabled {
+    @apply bg-red-400
+  }
+
+  .input {
+    @apply border border-dark bg-dark min-w-0 w-full flex-1 outline-none rounded-sm py-1 px-2
+  }
+
+  .input:focus{
+    @apply border-white
+  }
+
+  .input::placeholder{
+    @apply text-sm
+  }
+}
