@@ -2,19 +2,11 @@
   "payers":[
     {
       "id": 1,
-      "name":"Mahmut"
+      "name":"Yeni Kullanıcı 1"
     },
     {
       "id": 2,
-      "name":"Arşın"
-    },
-    {
-      "id": 3,
-      "name":"Seyit"
-    },
-    {
-      "id": 4,
-      "name":"Yeni Kullanıcı 1"
+      "name":"Yeni Kullanıcı 2"
     }
   ],
 
@@ -23,16 +15,6 @@
       "id": 1,
       "name": "Elma",
       "price": 10
-    },
-    {
-      "id": 2,
-      "name": "Muz",
-      "price": 20
-    },
-    {
-      "id": 3,
-      "name": "Soğan",
-      "price": 15
     }
   ]
 }

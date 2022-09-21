@@ -1,14 +1,10 @@
 # receipt-splitter
 
-This template should help get you started developing with Vue 3 in Vite.
+  This project calculate the total price in a shopping receipt separately, according to the products purchased by the people then shows them.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Live
+### **[Preview on Netlify](https://receipt-spliiter.netlify.app/)**
+<br >
 
 ## Project Setup
 
@@ -27,3 +23,11 @@ npm run dev
 ```sh
 npm run build
 ```
+
+# Screenshots
+
+![Screenshot1](src/assets/img/ss.png)
+![Screenshot2](src/assets/img/ss2.png)
+<p align="center">
+  <img src="src/assets/img/ss3.png" alt="Screenshot3"/>
+</p>

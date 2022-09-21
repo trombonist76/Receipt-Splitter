@@ -4,10 +4,12 @@
 @tailwind utilities;
 
 html,body,#app{
-  background-color: #0B1734;
+  min-height: 100vh; 
   font-family: 'Sora', sans-serif;
   color: white;
+  background-color: #0B1734;
 }
+
 
 *{
   margin: 0;

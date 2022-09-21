@@ -48,7 +48,7 @@
 </script>
 
 <template>
-  <div class="flex justify-center items-center h-full md:mt-12 md:mb-12">
+  <div class="flex justify-center h-full sm:h-auto sm:mt-12 sm:mb-12">
     <Receipt/>
   </div>
 </template>

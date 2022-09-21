@@ -11,7 +11,7 @@
     padding: 5px 10px;
     border-radius: 15px;
     background-color: tomato;
-    font-size: 13px;
+    font-size: 12px;
     user-select: none;
     }
 </style>
