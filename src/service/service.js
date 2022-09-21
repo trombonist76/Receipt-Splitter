@@ -1,5 +1,5 @@
 export async function getPayers(){
-  const url = "src/data/data.json"
+  const url = "https://raw.githubusercontent.com/trombonist76/Receipt-Splitter/main/src/data/data.json"
   const result = await fetch(url)
   .then(data => data.json())
   .then(data => data.payers)
