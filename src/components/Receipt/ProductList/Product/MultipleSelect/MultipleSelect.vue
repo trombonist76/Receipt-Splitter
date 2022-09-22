@@ -1,5 +1,5 @@
 <script setup>
-  import { ref,watchEffect,computed,watch} from 'vue';
+  import { ref,watchEffect,computed} from 'vue';
   import Options from './Options.vue';
   import SelectedOpts from './SelectedOpts/SelectedOpts.vue';
   import Button from '@/components/Receipt/Shared/Button.vue';

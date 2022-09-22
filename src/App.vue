@@ -3,6 +3,7 @@
   import {nanoid} from "nanoid"
   import Receipt from '@/components/Receipt/Receipt.vue';
   import {getPayers, getProducts, createNewPayerName} from '@/service/service'
+import { counter } from '@fortawesome/fontawesome-svg-core';
 
   const payers = ref([])
   const products = ref([])
@@ -20,7 +21,8 @@
   const addProduct = () => {
     const product = {
       id: nanoid(),
-      name: ""
+      name: "",
+      count:1
     }
     products.value.push(product)
   }
