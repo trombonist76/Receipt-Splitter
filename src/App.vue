@@ -3,14 +3,15 @@
   import {nanoid} from "nanoid"
   import Receipt from '@/components/Receipt/Receipt.vue';
   import {getPayers, getProducts, createNewPayerName} from '@/service/service'
-import { counter } from '@fortawesome/fontawesome-svg-core';
+  import { counter } from '@fortawesome/fontawesome-svg-core';
 
   const payers = ref([])
   const products = ref([])
     
 
   onMounted(async () => {
-    const payersData = await getPayers()
+    const data = JSON.parse(localStorage.getItem("payers"))
+    const payersData = data || await getPayers()
     const productsData = await getProducts()
     products.value = productsData       
     payers.value = payersData
@@ -42,6 +43,7 @@ import { counter } from '@fortawesome/fontawesome-svg-core';
 
   const deletePayer = (payer) => {
     payers.value = payers.value.filter(item => payer.id !== item.id)
+    localStorage.setItem("payers",JSON.stringify(payers.value))
   }
 
   provide("payers", {payers,addPayer,deletePayer})

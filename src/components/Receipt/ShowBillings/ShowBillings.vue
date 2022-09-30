@@ -14,6 +14,8 @@ import BillingList from './BillingList/BillingList.vue';
       // item,
       total
       }
+    if(!payerObj["totalPrice"]) payerObj["totalPrice"] = 0
+    payerObj["totalPrice"] = payerObj["totalPrice"] + total
     return payerObj
   },{})})
 

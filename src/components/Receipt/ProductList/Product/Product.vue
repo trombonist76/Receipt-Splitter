@@ -8,7 +8,6 @@ import CounterInput from '../../Shared/CounterInput.vue';
   const {payers} = inject("payers")
   const priceInput = ref(null)
   const handleClick = () => {
-    console.log('priceInput.value :>> ', priceInput.value);
     if (!props.product.price) priceInput.value.focus()
   }
 
